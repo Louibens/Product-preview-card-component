@@ -36,31 +36,35 @@ body {
 }
 
 .image {
+    background: url(image-product-mobile.jpg);
+    background-size: cover;
+    height: 320px;
     display: flex;
     justify-content: center;
+    border-radius: 10px 10px 0px 0px;
 }
 
 img {
-    border-radius: 10px 10px 0px 0px;
+    
     margin: auto;
     margin-top: 20px
 }
 
 .info {
     width: 350px;
-    height: 450px;
+    height: 380px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 0px 0px 10px 10px;
     color: hsl(228, 12%, 48%)
 }
 
-.info p:first-child {
+.perfume {
     letter-spacing: 5px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     font-weight: 500
 }
 
-.info p:nth-child(2) {
+.name {
     font-family: Fraunces;
     padding: 0 30px;
     font-weight: 700;
@@ -69,7 +73,7 @@ img {
 }
 
 .info p:nth-child(3) {
-    padding: 30px;
+    padding: 15px 30px;
     font-weight: 500;
     font-size: 14px;
     
@@ -82,7 +86,7 @@ img {
     
 }
 
-.price p:first-child {
+.full {
     font-family: Fraunces;
     padding: 0 30px;
     font-weight: 700;
@@ -91,7 +95,7 @@ img {
     letter-spacing: 0;
 }
 
-.price p:nth-child(2) {
+.rrp {
     font-family: Montserrat;
     padding: 0 20px;
     font-weight: 500;
@@ -104,7 +108,7 @@ button {
     background-color: hsl(158, 36%, 37%);
     border-radius: 5px;
     width: 300px;
-    margin: 25px;
+    margin: 20px 25px;
     height: 50px;
     
     display: flex;
@@ -118,4 +122,98 @@ button {
 color: hsl(0, 0%, 100%) !important;
 font-family: Montserrat !important;
 font-weight: 500 !important;
+}
+
+@media only screen and (min-width: 900px) {
+
+    body {
+        font-size: 14px;
+        background-color: hsl(30, 38%, 92%);
+        width: 100vw;
+        height:100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+
+        height: 400px;
+        width: 650px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .image {
+        background: url(image-product-desktop.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    .info {
+        width: 270px;
+        height: 400px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0px 10px 10px 0px;
+        color: hsl(228, 12%, 48%)
+    }
+
+    .perfume {
+        letter-spacing: 5px;
+        padding: 30px;
+        font-weight: 500
+    }
+
+    .name {
+        font-family: Fraunces;
+        padding: 0 30px;
+        font-weight: 700;
+        font-size: 28px;
+        color: hsl(212, 21%, 14%)
+    }
+
+    .full {
+        font-family: Fraunces;
+        padding:0;
+        padding-left: 30px !important;
+        font-weight: 700;
+        font-size: 34px;
+        color: hsl(158, 36%, 37%);
+        letter-spacing: 0;
+    }
+    
+    .rrp{
+        font-family: Montserrat;
+        padding: 20px 20px;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%)
+    }
+    
+    button {
+        background-color: hsl(158, 36%, 37%);
+        border-radius: 5px;
+        width: 200px;
+        margin: auto !important;
+        height: 50px;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info p:nth-child(3) {
+        padding: 15px 30px;
+        font-weight: 500;
+        font-size: 12px;
+        
+    }
 }
