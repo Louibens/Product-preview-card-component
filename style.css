@@ -31,7 +31,8 @@ body {
 .container {
 
     height: 650px;
-    width: 350px
+    width: 350px;
+    
 }
 
 .image {
@@ -49,17 +50,72 @@ img {
     width: 350px;
     height: 450px;
     background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 0px 10px 10px;
+    color: hsl(228, 12%, 48%)
 }
 
 .info p:first-child {
     letter-spacing: 5px;
-    padding: 10px;
+    padding: 20px 30px;
     font-weight: 500
 }
 
 .info p:nth-child(2) {
     font-family: Fraunces;
-    padding: 0 10px;
+    padding: 0 30px;
     font-weight: 700;
-    font-size: 34px
+    font-size: 32px;
+    color: hsl(212, 21%, 14%)
+}
+
+.info p:nth-child(3) {
+    padding: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.price p:first-child {
+    font-family: Fraunces;
+    padding: 0 30px;
+    font-weight: 700;
+    font-size: 34px;
+    color: hsl(158, 36%, 37%);
+    letter-spacing: 0;
+}
+
+.price p:nth-child(2) {
+    font-family: Montserrat;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%)
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    width: 300px;
+    margin: 25px;
+    height: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+    font-size: 16px !important;
+color: hsl(0, 0%, 100%) !important;
+font-family: Montserrat !important;
+font-weight: 500 !important;
 }
